@@ -1,0 +1,10 @@
+body{
+	background:url(interests.jpg) no-repeat;
+	background-size: cover;
+	opacity: 1;
+}
+ul,li{
+	font-family: oblique;
+	text-decoration: none;
+	list-style: none;
+}
