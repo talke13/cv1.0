@@ -1,10 +1,51 @@
-body{
+main{
+	opacity: 1;
+	display:flex;
+	justify-content: space-around;
+	padding: 0%;
+	margin: auto;
+}
+html{
 	background:url(interests.jpg) no-repeat;
 	background-size: cover;
-	opacity: 1;
 }
 ul,li{
 	font-family: oblique;
 	text-decoration: none;
 	list-style: none;
+}
+h1{
+	text-align: center;
+	font-size: 40px;
+}
+ul {
+padding: 10px;
+text-align: center;
+}
+.round {
+text-align: center;
+border: 2px solid lightblue;
+border-radius: 15px;
+margin: 30px;
+width: 15%;
+}
+.travel{
+
+border: 2px solid black;
+border-radius:15px;
+margin: 40px;
+width: 22%;
+border:1px solid;
+padding-bottom: 24px;
+
+}
+.pictures>li>img{
+	width: 300px;
+	height: 150px;
+	object-fit: cover;
+	padding: 5px;
+}
+.pictures{
+	display: inline-block;
+
 }

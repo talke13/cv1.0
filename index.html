@@ -13,32 +13,50 @@
 </head>
 <body>
 <link rel="stylesheet" type="text/css" href="style.css">
-<ul>
-	<li><a href="PersonalInformation" style="color:black">Personal Information</a></li>
+<img id="menuimg" class="mimg" src="menu.jpg.png" onclick="meni()">
+<header>
+<ul class="navigation" id="menubar">
+	<li><a href="PersonalInformation.html" style="color:black"></a>Personal Information</a></li>
 
 
-	<li><a href="Education">Education</a></li>
+	<li><a href="Education.html">Education</a></a>
 	
 
-	<li><a href="skills">Skills</a></li>
+	<li><a href="skills.html">Skills</a></li>
 
 
-	<li><a href="langs">Languages</a></li>
+	<li><a href="langs.html">Languages</a></li>
 
 
 	<li id="other"><a>Other</a>
 		<ul id="otherList">
-		<li><a href="interests">Interests & photos</a></li>
+		<li><a href="interests.html">Interests & photos</a></li>
 		</ul>
 	</li>
 </ul>
+</header>
 		<img src="img5.jpg" alt="image5" align="middle" width="800px" height="600px">
-	<a href="https://www.instagram.com/don_talke/"> <img src="igLogo.png" alt="instagram" width="110px" height="110px" align="left"></a>
-
- 	<a href="https://www.facebook.com/talke666"> <img src="fbLogo.png" alt="fbLogo" width="110px" height="110px" align="middle"></a>
-
- 	<a href=“mailto:talkebaa@gmail.com”> <img src="gmail.png" width="110px" height="110px" alt="gmail" align="right"></a>
-
+<footer>
+	<ul class="smlist">
+	<li><a  href="https://www.instagram.com/don_talke/"> <img class="sm" src="igLogo.png" alt="instagram" width="110px" height="110px" ></a>
+	</li>
+<li><a href="https://www.facebook.com/talke666"> <img class="sm" src="fbLogo.png" alt="fbLogo" width="110px" height="110px" ></a>
+</li>
+<li><a href=“mailto:talkebaa@gmail.com”> <img class="sm" src="gmail.png" width="110px" height="110px" alt="gmail"></a>
+</li>
+</ul>
+</footer>
 </body>
-
+<script>
+	function meni(){
+		var menu=document.getElementById("menubar");
+		var img=document.getElementById("menuimg");
+		if (menu.style.display === "none") {
+   			 menu.style.display = "block";
+  		} 
+		else {
+    		menu.style.display = "none";
+  		}
+	}
+</script>
 </html>

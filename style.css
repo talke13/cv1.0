@@ -1,17 +1,23 @@
 body{
-background: url("cvBackground.jpg") no-repeat;
-background-size: cover;	
-font-family: Arial;
-color: white;
+	background: url("cvBackground.jpg") no-repeat;
+	background-size: cover;	
+	font-family: Arial;
+	color: white;
 }
-
+.navigation{
+	display: none;
+}
+.mimg{
+	width: 50px;
+	height: 50px;
+}
 ul{
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
 	
 }
-ul li{
+ul:not(.smlist)>li{
 	float: left;
 	width: 250px;
 	height: 40px;
@@ -27,17 +33,27 @@ ul li a{
 	color: white;
 	display: block;
 }
-ul li a:hover{
+.navigation>li>a:hover{
 	background-color: green;
 }
 ul li ul li{
 	display: none;
 }
-ul li:hover ul li{
+ul li:hover li{
 	display: block;
 }
 img{
 	float:bottom-left;
 	border-radius: 40%;
+}
+.sm{
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	padding: 10px;
+}
+footer>ul{
+	display: inline-flex;
+	float: right;
 }
 
